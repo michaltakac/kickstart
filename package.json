@@ -1,10 +1,10 @@
 {
-  "name": "meteor-webpack-react-kickstart",
+  "name": "kickstart",
   "description": "Kickstart a project with the most productive stack you ever used",
   "version": "0.2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thereactivestack/meteor-webpack-react-kickstart.git"
+    "url": "https://github.com/thereactivestack/kickstart.git"
   },
   "scripts": {
     "lint": "eslint --ext .js,.jsx ."

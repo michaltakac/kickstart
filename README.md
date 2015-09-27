@@ -1,4 +1,4 @@
-# meteor-webpack-react-kickstart
+# kickstart by The Reactive Stack
 
 Kickstart your project with the perfect Web App setup: Meteor + Webpack + React
 
@@ -10,7 +10,7 @@ If you are new to React, you should learn the basics first. You can watch [those
 
 If you are new to Meteor, you should go through the [Meteor Todo tutorial](https://www.meteor.com/tutorials/blaze/creating-an-app).
 
-Then, you can try the [TodoApp example](https://github.com/thereactivestack/meteor-webpack-react-kickstart/tree/master/react/todo) this project comes with.
+Then, you can try the [TodoApp example](https://github.com/thereactivestack/kickstart/tree/master/react/todo) this project comes with.
 
 COMING SOON - A serie of videos is in process of being made to learn from scratch how to use Meteor with React. Watch this repo or [follow me on Twitter](https://twitter.com/benoit_tremblay) to stay tuned!
 
@@ -33,7 +33,7 @@ You might be confused because the folder structure is not how it used to be with
 - `meteor/server`: The code you want to only run on the server (subscriptions, ...).
 
 # Get started
-1. `git clone https://github.com/thereactivestack/meteor-webpack-react-kickstart.git`
+1. `git clone https://github.com/thereactivestack/kickstart.git`
 1. `npm install` in the root
 1. `./scripts/run-dev.sh` to run in development mode (with hot-reload)
 1. `./scripts/run-dev.sh` to run in production mode (with server-rendering, need to be restarted if you change anything inside the react folder)
@@ -45,7 +45,7 @@ You might be confused because the folder structure is not how it used to be with
 # How do I communicate with Meteor?
 You can use the [ReactMeteorData mixin](https://atmospherejs.com/meteor/react-meteor-data) from the Meteor team. You have to use React.createClass with them because mixins are deprecated with ES6 classes.
 
-You can see a great example by reading the [TodoApp.jsx code](https://github.com/thereactivestack/meteor-webpack-react-kickstart/blob/master/react/todo/TodoApp.jsx).
+You can see a great example by reading the [TodoApp.jsx code](https://github.com/thereactivestack/kickstart/blob/master/react/todo/TodoApp.jsx).
 
 # CSS in your React components
 This project allows you to require CSS (or SCSS/LESS) inside `componentWillMount` of your React components. This allows you to bundle your CSS with your React components. You will never miss a CSS file in your project again.
