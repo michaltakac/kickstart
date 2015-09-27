@@ -10,17 +10,18 @@ var babelSettings = {
         transform: 'react-transform-hmr',
         imports: ['react'],
         locals: ['module']
-      }, {
+      }/*, {
         transform: 'react-transform-catch-errors',
         imports: ['react', 'redbox-react']
-      }]
+      }*/]
+      // redbox-react is breaking the line numbers :-(
     }
   }
 };
 
 module.exports = {
   name: 'client',
-  devtool: 'eval',
+  devtool: 'inline-source-map',
   context: path.join(__dirname, '..'),
   entry: [
     'webpack-hot-middleware/client',
