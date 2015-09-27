@@ -1,3 +1,4 @@
 node_modules
+*.log
 meteor/react-build-generated
 meteor/public/assets/*.*
