@@ -40,7 +40,7 @@ You might be confused because the folder structure is not how it used to be with
 1. `git clone https://github.com/thereactivestack/kickstart.git`
 1. `npm install` in the root
 1. `./scripts/run-dev.sh` to run in development mode (with hot-reload)
-1. `./scripts/run-dev.sh` to run in production mode (with server-rendering, need to be restarted if you change anything inside the react folder)
+1. `./scripts/run-prod.sh` to run in production mode (with server-rendering, need to be restarted if you change anything inside the react folder)
 1. `./scripts/build.sh` to build the compressed bundle
 1. You can use `./meteor.sh` as a shortcut for executing `meteor` in the meteor folder
 
