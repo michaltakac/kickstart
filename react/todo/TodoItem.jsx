@@ -44,11 +44,8 @@ export default class TodoItem extends Component {
     return (
       <li className={itemClass}>
         <button className="delete" onClick={this.handleDelete.bind(this)}>&times;</button>
-
         <input type="checkbox" checked={this.props.task.checked} onChange={this.handleChecked.bind(this)} className="toggle-checked" />
-
         {this.renderTogglePrivate()}
-
         <span className="text"><strong>{this.props.task.username}</strong> - {this.props.task.text}</span>
       </li>
     );

@@ -7,11 +7,14 @@
     "url": "https://github.com/thereactivestack/kickstart.git"
   },
   "scripts": {
-    "lint": "eslint --ext .js,.jsx ."
+    "lint": "eslint --ext .js,.jsx .",
+    "tests": "karma start --single-run"
   },
   "license": "MIT",
   "dependencies": {
-    "es6-promise": "^3.0.2"
+    "es6-promise": "^3.0.2",
+    "react": "^0.13.3",
+    "react-router": "^1.0.0-rc1"
   },
   "devDependencies": {
     "babel-core": "^5.8.24",
@@ -21,10 +24,16 @@
     "css-loader": "^0.19.0",
     "eslint": "^1.5.1",
     "eslint-plugin-react": "^3.4.2",
+    "expect": "^1.11.1",
     "file-loader": "^0.8.4",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.10",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-sourcemap-loader": "^0.3.5",
+    "karma-webpack": "^1.7.0",
     "node-sass": "^3.3.3",
     "null-loader": "^0.1.1",
-    "react": "^0.13.3",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.0",
     "redbox-react": "^1.0.6",

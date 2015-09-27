@@ -36,7 +36,7 @@ module.exports = [
         { test: /\.css$/, loader: 'style!css' },
         { test: /\.scss$/, loader: 'style!css!sass' },
         { test: /\.(png|jpe?g)(\?.*)?$/, loader: 'url?limit=8192'},
-        { test: /\.(svg|ttf|woff)(\?.*)?$/, loader: 'file'}
+        { test: /\.(svg|ttf|woff|eot)(\?.*)?$/, loader: 'file'}
       ]
     }
   },

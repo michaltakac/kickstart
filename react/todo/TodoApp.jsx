@@ -53,11 +53,7 @@ export default React.createClass({
             hideCompleted={this.state.hideCompleted}
             toggleHideCompleted={this.handleToggleHideCompleted}
         />
-        <TodoList
-            user={this.data.user}
-            tasks={this.data.tasks}
-            hideCompleted={this.state.hideCompleted}
-        />
+        <TodoList tasks={this.data.tasks} />
       </div>
     );
   }

@@ -3,7 +3,6 @@ import TodoItem from './TodoItem';
 
 export default class TodoList extends Component {
   static propTypes = {
-    hideCompleted: PropTypes.bool,
     tasks: PropTypes.array.isRequired
   }
 

@@ -22,6 +22,10 @@ COMING SOON - A serie of videos is in process of being made to learn from scratc
 - You can require images so they get bundled automatically (`<img src={require('./img/check.png')} alt="" />`)
 - You can use Blaze templates with [BlazeToReact](https://atmospherejs.com/thereactivestack/blazetoreact)
 
+# Testing
+ - lint: `npm run lint`
+ - unit test on React components: `npm run tests`
+
 # Folder structure
 You might be confused because the folder structure is not how it used to be with Meteor. Here is what you need to know about each folder:
 
