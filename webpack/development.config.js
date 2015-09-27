@@ -2,17 +2,17 @@ var path = require('path');
 var webpack = require('webpack');
 
 var babelSettings = {
-  "stage": 0,
-  "plugins": ["react-transform"],
-  "extra": {
-    "react-transform": {
-      "transforms": [{
-        "transform": "react-transform-hmr",
-        "imports": ["react"],
-        "locals": ["module"]
+  stage: 0,
+  plugins: ['react-transform'],
+  extra: {
+    'react-transform': {
+      transforms: [{
+        transform: 'react-transform-hmr',
+        imports: ['react'],
+        locals: ['module']
       }, {
-        "transform": "react-transform-catch-errors",
-        "imports": ["react", "redbox-react"]
+        transform: 'react-transform-catch-errors',
+        imports: ['react', 'redbox-react']
       }]
     }
   }

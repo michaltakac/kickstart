@@ -5,7 +5,8 @@ const LoginButtons = BlazeToReact('loginButtons');
 export default class TodoHeader extends Component {
   static propTypes = {
     hideCompleted: PropTypes.bool,
-    toggleHideCompleted: PropTypes.func.isRequired
+    toggleHideCompleted: PropTypes.func.isRequired,
+    incompleteCount: PropTypes.number.isRequired
   }
 
   handleSubmit(event) {

@@ -49,13 +49,15 @@ export default React.createClass({
     return (
       <div className="container">
         <TodoHeader
-          incompleteCount={this.data.incompleteCount}
-          hideCompleted={this.state.hideCompleted}
-          toggleHideCompleted={this.handleToggleHideCompleted} />
+            incompleteCount={this.data.incompleteCount}
+            hideCompleted={this.state.hideCompleted}
+            toggleHideCompleted={this.handleToggleHideCompleted}
+        />
         <TodoList
-          user={this.data.user}
-          tasks={this.data.tasks}
-          hideCompleted={this.state.hideCompleted} />
+            user={this.data.user}
+            tasks={this.data.tasks}
+            hideCompleted={this.state.hideCompleted}
+        />
       </div>
     );
   }
