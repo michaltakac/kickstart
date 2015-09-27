@@ -13,5 +13,9 @@
 # 2. Set the correct SASS_BINARY_NAME value based on the directory between vendor and binding.node in the error message: .../vendor/linux-x64-11/binding.node
 # 3. Run the script and the error should disappear
 
-export SASS_BINARY_NAME=linux-x64-11
-npm rebuild node-sass
+SASS_BINARY_NAME=linux-x64-11
+NODE_VERSION=v0.10.40
+
+ROOT_FOLDER=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/..
+cd $ROOT_FOLDER/node_modules/node-sass
+node $ROOT_FOLDER/node_modules/node-sass/scripts/build.js --arch=$SASS_BINARY_NAME --target=$NODE_VERSION --force
