@@ -2,6 +2,11 @@ import { Component, PropTypes } from 'react';
 import TodoItem from './TodoItem';
 
 export default class TodoList extends Component {
+  static propTypes = {
+    hideCompleted: PropTypes.bool,
+    tasks: PropTypes.array.isRequired
+  }
+
   render() {
     return (
       <ul>
@@ -10,8 +15,3 @@ export default class TodoList extends Component {
     );
   }
 }
-
-TodoList.propTypes = {
-  hideCompleted: PropTypes.bool,
-  tasks: PropTypes.array.isRequired
-};
