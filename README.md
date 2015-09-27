@@ -81,7 +81,7 @@ W20150925-15:43:08.319(-4)? (STDERR) Run `npm rebuild node-sass` to build the bi
 It is because Meteor is running on a different Node.js version than your local version. You can fix it easily:
 
 1. Open `scripts/fix-sass.sh` with your favorite editor
-1. Set the correct `SASS_BINARY_NAME` value based on the directory between vendor and binding.node: .../vendor/**linux-x64-11**/binding.node
+1. Set the correct `SASS_BINARY_NAME` value based on the directory between vendor and binding.node in the error message: .../vendor/**linux-x64-11**/binding.node
 1. Run the script and the error should disappear
 
 # How the build process is working?

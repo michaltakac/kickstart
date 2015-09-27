@@ -10,7 +10,7 @@
 # It is because Meteor is running on a different Node.js version than your local version. You can fix it easily:
 
 # 1. Open this script with your favorite editor
-# 2. Set the correct SASS_BINARY_NAME value based on the directory between vendor and binding.node: .../vendor/linux-x64-11/binding.node
+# 2. Set the correct SASS_BINARY_NAME value based on the directory between vendor and binding.node in the error message: .../vendor/linux-x64-11/binding.node
 # 3. Run the script and the error should disappear
 
 export SASS_BINARY_NAME=linux-x64-11
