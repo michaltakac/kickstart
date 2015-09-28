@@ -24,7 +24,7 @@ COMING SOON - A serie of videos is in process of being made to learn from scratc
 
 # Testing
  - lint: `npm run lint`
- - unit test on React components: `npm run tests`
+ - unit test on React components: `npm run tests` or `karma start` for continuous testing (you need `npm i -g karma-cli` first)
 
 # Folder structure
 You might be confused because the folder structure is not how it used to be with Meteor. Here is what you need to know about each folder:
