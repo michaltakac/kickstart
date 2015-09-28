@@ -16,14 +16,13 @@ export default class TodoApp extends Component {
   getMeteorData() {
     Meteor.subscribe('tasks');
 
-    let tasks;
+    let taskFilter = {$or: [{ private: {$ne: true} }, { owner: Meteor.userId() }]};
 
     if (this.state.hideCompleted) {
-      tasks = Tasks.find({checked: {$ne: true}}, {sort: {createdAt: -1}}).fetch();
-    } else {
-      tasks = Tasks.find({}, {sort: {createdAt: -1}}).fetch();
+      taskFilter.checked = {$ne: true};
     }
 
+    const tasks = Tasks.find(taskFilter, {sort: {createdAt: -1}}).fetch();
     const incompleteCount = Tasks.find({checked: {$ne: true}}).count();
 
     return {
