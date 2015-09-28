@@ -22,7 +22,7 @@ COMING SOON - A serie of videos is in process of being made to learn from scratc
 1. `./scripts/build.sh` to build the compressed bundle
 1. You can use `./meteor.sh` as a shortcut for executing `meteor` in the meteor folder
 
-*.bat scripts will be soon available for Windows*
+**Windows scripts are available with .bat extension**
 
 # What's so wonderful about this project?
 - You have hot reload of your React component with no page refresh (10x faster than Meteor hot-reload, no jokes)
@@ -34,7 +34,7 @@ COMING SOON - A serie of videos is in process of being made to learn from scratc
 
 # Testing
  - lint: `npm run lint`
- - unit test on React components: `npm run tests` or `karma start` for continuous testing (you need `npm i -g karma-cli` first)
+ - unit test on React components: `npm run test` or `karma start` for continuous testing (you need `npm i -g karma-cli` first)
 
 # Folder structure
 You might be confused because the folder structure is not how it used to be with Meteor. Here is what you need to know about each folder:

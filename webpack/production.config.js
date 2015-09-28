@@ -8,7 +8,7 @@ var babelSettings = {
 module.exports = [
   {
     name: 'client',
-    devtool: 'inline-source-map',
+    devtool: null,
     context: path.join(__dirname, '..'),
     entry: './react',
     output: {
@@ -43,7 +43,7 @@ module.exports = [
 
   {
     name: 'server',
-    devtool: 'inline-source-map',
+    devtool: null,
     context: path.join(__dirname, '..'),
     entry: './react',
     output: {
