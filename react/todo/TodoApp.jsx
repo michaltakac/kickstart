@@ -1,16 +1,17 @@
-import React from 'react';
+/* global ReactMeteorData */
+
+import { Component } from 'react';
+import ReactMixin from 'react-mixin';
 
 import TodoHeader from './TodoHeader';
 import TodoList from './TodoList';
 
-export default React.createClass({
-  getInitialState() {
-    return {
-      hideCompleted: false
-    };
-  },
+@ReactMixin.decorate(ReactMeteorData)
+export default class TodoApp extends Component {
 
-  mixins: [ReactMeteorData],
+  state = {
+    hideCompleted: false
+  }
 
   getMeteorData() {
     Meteor.subscribe('tasks');
@@ -30,15 +31,15 @@ export default React.createClass({
       incompleteCount,
       user: Meteor.user()
     };
-  },
+  }
 
-  handleToggleHideCompleted(e) {
+  handleToggleHideCompleted = (e) => {
     this.setState({ hideCompleted: e.target.checked });
-  },
+  }
 
   componentWillMount() {
     require('./TodoApp.css');
-  },
+  }
 
   render() {
     if (!this.data.tasks) {
@@ -47,14 +48,14 @@ export default React.createClass({
     }
 
     return (
-      <div className="container">
-        <TodoHeader
-            incompleteCount={this.data.incompleteCount}
-            hideCompleted={this.state.hideCompleted}
-            toggleHideCompleted={this.handleToggleHideCompleted}
-        />
-        <TodoList tasks={this.data.tasks} />
-      </div>
+        <div className="container">
+          <TodoHeader
+              incompleteCount={this.data.incompleteCount}
+              hideCompleted={this.state.hideCompleted}
+              toggleHideCompleted={this.handleToggleHideCompleted}
+          />
+          <TodoList tasks={this.data.tasks} />
+        </div>
     );
   }
-});
+};
