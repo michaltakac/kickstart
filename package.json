@@ -8,12 +8,13 @@
   },
   "scripts": {
     "lint": "eslint --ext .js,.jsx .",
-    "tests": "karma start --single-run"
+    "test": "karma start --single-run"
   },
   "license": "MIT",
   "dependencies": {
     "es6-promise": "^3.0.2",
     "react": "^0.13.3",
+    "react-mixin": "^3.0.0",
     "react-router": "^1.0.0-rc1"
   },
   "devDependencies": {

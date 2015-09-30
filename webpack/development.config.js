@@ -21,7 +21,7 @@ var babelSettings = {
 
 module.exports = {
   name: 'client',
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-eval-source-map',
   context: path.join(__dirname, '..'),
   entry: [
     'webpack-hot-middleware/client',

@@ -14,6 +14,16 @@ Then, you can try the [TodoApp example](https://github.com/thereactivestack/kick
 
 COMING SOON - A serie of videos is in process of being made to learn from scratch how to use Meteor with React. Watch this repo or [follow me on Twitter](https://twitter.com/benoit_tremblay) to stay tuned!
 
+# Get started
+1. `git clone https://github.com/thereactivestack/kickstart.git`
+1. `npm install` in the root
+1. `./scripts/run-dev.sh` to run in development mode (with hot-reload)
+1. `./scripts/run-prod.sh` to run in production mode (with server-rendering, need to be restarted if you change anything inside the react folder)
+1. `./scripts/build.sh` to build the compressed bundle
+1. You can use `./meteor.sh` as a shortcut for executing `meteor` in the meteor folder
+
+**Windows scripts are available with .bat extension**
+
 # What's so wonderful about this project?
 - You have hot reload of your React component with no page refresh (10x faster than Meteor hot-reload, no jokes)
 - You can use ES6 modules to organize your React components
@@ -24,7 +34,7 @@ COMING SOON - A serie of videos is in process of being made to learn from scratc
 
 # Testing
  - lint: `npm run lint`
- - unit test on React components: `npm run tests`
+ - unit test on React components: `npm run test` or `karma start` for continuous testing (you need `npm i -g karma-cli` first)
 
 # Folder structure
 You might be confused because the folder structure is not how it used to be with Meteor. Here is what you need to know about each folder:
@@ -35,16 +45,6 @@ You might be confused because the folder structure is not how it used to be with
 - `meteor/public/assets`: This folder is reserved for Webpack public files. They are the assets Webpack bundled with your javascript. In dev mode, they are not written on the disk.
 - `meteor/client`: Anything you need to setup on the client that is Meteor specific. If you want to use the Meteor CSS bundle, you can put them in this folder.
 - `meteor/server`: The code you want to only run on the server (subscriptions, ...).
-
-# Get started
-1. `git clone https://github.com/thereactivestack/kickstart.git`
-1. `npm install` in the root
-1. `./scripts/run-dev.sh` to run in development mode (with hot-reload)
-1. `./scripts/run-prod.sh` to run in production mode (with server-rendering, need to be restarted if you change anything inside the react folder)
-1. `./scripts/build.sh` to build the compressed bundle
-1. You can use `./meteor.sh` as a shortcut for executing `meteor` in the meteor folder
-
-*.bat scripts will be soon available for Windows*
 
 # How do I communicate with Meteor?
 You can use the [ReactMeteorData mixin](https://atmospherejs.com/meteor/react-meteor-data) from the Meteor team. You have to use React.createClass with them because mixins are deprecated with ES6 classes.
